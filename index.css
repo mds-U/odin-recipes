@@ -1,0 +1,125 @@
+html {
+  width: 100%;
+  min-height: 100vh;
+}
+
+:root {
+  --main-color: #854D27;
+  --text-color: #42382b;
+  --bg-color: #E6D3A3;
+}
+
+*::selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+a:link { text-decoration: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text color);
+  background: var(--bg-color);
+}
+
+.content{
+  gap:202px;
+  display: flex;
+}
+
+.heading {
+  font-size: 60px;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-align: center;
+  color: var(--main-color);
+  text-decoration: overline;
+}
+
+
+h2 {
+  text-align: center;
+  color: var(--main-color);
+  font-family: "Monaco", monospace;
+}
+
+h3 {
+  color: var(--main-color);
+  font-family: "Monaco", monospace;
+}
+
+p {
+  color: #42382b;
+  font-family: "Monaco", monospace;
+  font-size: 20px;
+  text-align: justify;
+}
+
+.item1 ,
+.item2 ,
+.item3 {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  align-items:center;
+  width:300px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Monaco", monospace;
+  color: var(--text-color);
+}
+
+div img{  
+  width:400px;
+  height:350px;
+}
+
+.item1 img:hover , 
+.item2 img:hover , 
+.item3 img:hover {
+  transform: scale(1.05);
+  transition: all ease ;
+  border-radius: 15px;
+  box-shadow: 0 0 5px rgb(255, 160, 17);
+}
+
+.pic {
+  display: flex;
+  position: relative;
+  top: 30%;
+  left: 35%;
+  width: 400px;
+  margin-bottom: 40px;
+  border: 5px solid #000000;
+  padding: 3px;
+  margin: 5px;
+}
+
+.web1 {
+ display:flex;
+ position: relative;
+ justify-content: center;
+ font-size: 18px;
+ color: #42382b;
+ font-family: "Monaco", monospace;
+ gap:20px;
+ left: 2%;
+ top: 100%;
+ width: 95%;
+}
+
+.ingredients-content {
+  height: 440px;
+  padding:20px;
+  flex-grow: 3;
+}
+
+.steps-content {
+  margin-top:18px;
+  border-radius: 10px;
+  height: 500px;
+}
+
+.side-note {
+  margin-top:90px;
+}
